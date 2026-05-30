@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineVerse - Movie Streaming</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <span class="logo-icon">🎬</span>
+                <span class="logo-text">CINE<span class="logo-accent">VERSE</span></span>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#movies" class="nav-link">Movies</a></li>
+                <li><a href="#tv-shows" class="nav-link">TV Shows</a></li>
+                <li><a href="#trending" class="nav-link">Trending</a></li>
+                <li><a href="#my-list" class="nav-link">My List</a></li>
+            </ul>
+
+            <!-- Right Side Icons -->
+            <div class="nav-icons">
+                <a href="#search" class="icon-link search-icon">🔍</a>
+                <a href="#notifications" class="icon-link">🔔</a>
+                <a href="#profile" class="icon-link profile">
+                    <span class="profile-avatar">A</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="carousel-container">
+            <!-- Slide 1 -->
+            <div class="carousel-slide active" data-slide="0">
+                <div class="hero-background">
+                    <img src="https://images.pexels.com/photos/4114631/pexels-photo-4114631.jpeg?auto=compress&cs=tinysrgb&w=1600" 
+                         alt="The Last Frontier" class="hero-image">
+                    <div class="hero-overlay"></div>
+                </div>
+
+                <div class="hero-content">
+                    <div class="featured-badge">FEATURED</div>
+                    <div class="featured-ranking">#3 Trending Now</div>
+                    
+                    <h1 class="hero-title">The Last Frontier</h1>
+                    
+                    <div class="movie-info">
+                        <span class="rating">⭐ 8.4</span>
+                        <span class="genre">Action</span>
+                        <span class="duration">1h 58m</span>
+                        <span class="year">2023</span>
+                    </div>
+
+                    <p class="hero-description">
+                        When the final wilderness on Earth is threatened, a lone ranger makes one last 
+                        stand against an empire of greed.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">
+                            <span class="play-icon">▶</span> Watch Now
+                        </button>
+                        <button class="btn btn-secondary">
+                            <span class="plus-icon">+</span> Add to Watchlist
+                        </button>
+                        <button class="btn btn-icon">ℹ️</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide" data-slide="1">
+                <div class="hero-background">
+                    <img src="https://images.pexels.com/photos/10806838/pexels-photo-10806838.jpeg?auto=compress&cs=tinysrgb&w=1600" 
+                         alt="Neon Nights" class="hero-image">
+                    <div class="hero-overlay"></div>
+                </div>
+
+                <div class="hero-content">
+                    <div class="featured-badge">TRENDING</div>
+                    <div class="featured-ranking">#1 This Week</div>
+                    
+                    <h1 class="hero-title">Neon Nights</h1>
+                    
+                    <div class="movie-info">
+                        <span class="rating">⭐ 8.9</span>
+                        <span class="genre">Sci-Fi</span>
+                        <span class="duration">2h 14m</span>
+                        <span class="year">2024</span>
+                    </div>
+
+                    <p class="hero-description">
+                        In a neon-soaked cyberpunk city, a rogue hacker uncovers a conspiracy that 
+                        threatens the entire digital world.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">
+                            <span class="play-icon">▶</span> Watch Now
+                        </button>
+                        <button class="btn btn-secondary">
+                            <span class="plus-icon">+</span> Add to Watchlist
+                        </button>
+                        <button class="btn btn-icon">ℹ️</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-slide" data-slide="2">
+                <div class="hero-background">
+                    <img src="https://images.pexels.com/photos/7478262/pexels-photo-7478262.jpeg?auto=compress&cs=tinysrgb&w=1600" 
+                         alt="Mystic Quest" class="hero-image">
+                    <div class="hero-overlay"></div>
+                </div>
+
+                <div class="hero-content">
+                    <div class="featured-badge">NEW RELEASE</div>
+                    <div class="featured-ranking">#2 Popular</div>
+                    
+                    <h1 class="hero-title">Mystic Quest</h1>
+                    
+                    <div class="movie-info">
+                        <span class="rating">⭐ 8.7</span>
+                        <span class="genre">Fantasy</span>
+                        <span class="duration">2h 45m</span>
+                        <span class="year">2024</span>
+                    </div>
+
+                    <p class="hero-description">
+                        An ancient prophecy awakens as a young warrior embarks on an epic journey 
+                        to save the mystical realm from darkness.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">
+                            <span class="play-icon">▶</span> Watch Now
+                        </button>
+                        <button class="btn btn-secondary">
+                            <span class="plus-icon">+</span> Add to Watchlist
+                        </button>
+                        <button class="btn btn-icon">ℹ️</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            <span class="indicator active" data-index="0"></span>
+            <span class="indicator" data-index="1"></span>
+            <span class="indicator" data-index="2"></span>
+        </div>
+
+        <!-- Carousel Navigation Arrows -->
+        <button class="carousel-arrow carousel-prev" id="prevBtn">❮</button>
+        <button class="carousel-arrow carousel-next" id="nextBtn">❯</button>
+    </section>
+
+    <!-- Trending Now Section -->
+    <section class="trending" id="trending">
+        <div class="section-inner">
+            <div class="section-header">
+                <h2>Trending Now</h2>
+                <div class="section-controls">
+                    <button class="small-arrow prev">‹</button>
+                    <button class="small-arrow next">›</button>
+                </div>
+            </div>
+
+            <div class="cards-row" id="trendingRow">
+                <article class="card">
+                    <span class="card-date">2024</span>
+                    <img src="https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Crimson Protocol">
+                    <div class="card-hover">
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Crimson Protocol</h3>
+                        <div class="meta">⭐ 8.9 · Thriller</div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <span class="card-date">2024</span>
+                    <img src="https://images.pexels.com/photos/1424683/pexels-photo-1424683.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Shattered Prism">
+                    <div class="card-hover">
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Shattered Prism</h3>
+                        <div class="meta">⭐ 8.2 · Sci-Fi</div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <span class="card-date">2023</span>
+                    <img src="https://images.pexels.com/photos/1703318/pexels-photo-1703318.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Hollow Crown">
+                    <div class="card-hover">
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Hollow Crown</h3>
+                        <div class="meta">⭐ 9.0 · Drama</div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <span class="card-date">2024</span>
+                    <img src="https://images.pexels.com/photos/219944/pexels-photo-219944.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dark Meridian">
+                    <div class="card-hover">
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Dark Meridian</h3>
+                        <div class="meta">⭐ 7.8 · Horror</div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <span class="card-date">2023</span>
+                    <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Glass Serpent">
+                    <div class="card-hover">
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Glass Serpent</h3>
+                        <div class="meta">⭐ 8.5 · Action</div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Browse by Genre Section -->
+    <section class="genres" id="genres">
+        <div class="section-inner">
+            <div class="section-header">
+                <h2>Browse by Genre</h2>
+            </div>
+
+            <div class="genre-grid">
+                <div class="genre-card genre-action" data-genre="action" style="background-image:url('https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&w=1200')">
+                    <div class="genre-overlay"><span class="genre-icon">⚔️</span><span>Action</span></div>
+                </div>
+
+                <div class="genre-card genre-scifi" data-genre="scifi" style="background-image:url('https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&w=1200')">
+                    <div class="genre-overlay"><span class="genre-icon">🌌</span><span>Sci-Fi</span></div>
+                </div>
+
+                <div class="genre-card genre-horror" data-genre="horror" style="background-image:url('https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=1200')">
+                    <div class="genre-overlay"><span class="genre-icon">💀</span><span>Horror</span></div>
+                </div>
+
+                <div class="genre-card genre-romance" data-genre="romance" style="background-image:url('https://images.pexels.com/photos/396547/pexels-photo-396547.jpeg?auto=compress&cs=tinysrgb&w=1200')">
+                    <div class="genre-overlay"><span class="genre-icon">🌹</span><span>Romance</span></div>
+                </div>
+
+                <div class="genre-card genre-comedy" data-genre="comedy" style="background-image:url('https://images.pexels.com/photos/277455/pexels-photo-277455.jpeg?auto=compress&cs=tinysrgb&w=1200')">
+                    <div class="genre-overlay"><span class="genre-icon">🎭</span><span>Comedy</span></div>
+                </div>
+
+                <div class="genre-card genre-thriller" data-genre="thriller" style="background-image:url('https://images.pexels.com/photos/1839835/pexels-photo-1839835.jpeg?auto=compress&cs=tinysrgb&w=1200')">
+                    <div class="genre-overlay"><span class="genre-icon">🎬</span><span>Thriller</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Continue Watching Section -->
+    <section class="continue-watching" id="continue-watching">
+        <div class="section-inner">
+            <div class="section-header">
+                <h2>Continue Watching</h2>
+            </div>
+            <div class="continue-grid">
+                <article class="continue-card">
+                    <div class="continue-thumb">
+                        <img src="https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Crimson Protocol">                        <div class="continue-hover">
+                            <button class="continue-play-btn">▶</button>
+                        </div>                        <span class="continue-badge">Ep 4 of 8</span>
+                    </div>
+                    <div class="continue-body">
+                        <h3>Crimson Protocol</h3>
+                        <div class="continue-footer">
+                            <span>Movie</span>
+                            <span>72%</span>
+                        </div>
+                        <div class="progress-track">
+                            <span class="progress-fill" style="width:72%"></span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="continue-card">
+                    <div class="continue-thumb">
+                        <img src="https://images.pexels.com/photos/1619861/pexels-photo-1619861.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Neon Requiem">
+                        <div class="continue-hover">
+                            <button class="continue-play-btn">▶</button>
+                        </div>
+                        <span class="continue-badge">Movie</span>
+                    </div>
+                    <div class="continue-body">
+                        <h3>Neon Requiem</h3>
+                        <div class="continue-footer">
+                            <span>Movie</span>
+                            <span>41%</span>
+                        </div>
+                        <div class="progress-track">
+                            <span class="progress-fill" style="width:41%"></span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="continue-card">
+                    <div class="continue-thumb">
+                        <img src="https://images.pexels.com/photos/622535/pexels-photo-622535.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="The Arsonist">
+                        <div class="continue-hover">
+                            <button class="continue-play-btn">▶</button>
+                        </div>
+                        <span class="continue-badge">Ep 7 of 10</span>
+                    </div>
+                    <div class="continue-body">
+                        <h3>The Arsonist</h3>
+                        <div class="continue-footer">
+                            <span>Series</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="progress-track">
+                            <span class="progress-fill" style="width:88%"></span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="continue-card">
+                    <div class="continue-thumb">
+                        <img src="https://images.pexels.com/photos/11224137/pexels-photo-11224137.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Pale Abyss">
+                        <div class="continue-hover">
+                            <button class="continue-play-btn">▶</button>
+                        </div>
+                        <span class="continue-badge">Movie</span>
+                    </div>
+                    <div class="continue-body">
+                        <h3>Pale Abyss</h3>
+                        <div class="continue-footer">
+                            <span>Movie</span>
+                            <span>15%</span>
+                        </div>
+                        <div class="progress-track">
+                            <span class="progress-fill" style="width:15%"></span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Picks Section -->
+    <section class="recommended" id="recommended">
+        <div class="section-inner">
+            <div class="section-header">
+                <h2>Recommended for You</h2>
+            </div>
+            <div class="featured-grid">
+                <article class="featured-card">
+                    <div class="featured-row">
+                        <div class="featured-thumb">
+                            <img src="https://images.pexels.com/photos/3225521/pexels-photo-3225521.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Neon Nights">
+                        </div>
+                        <div class="featured-body">
+                            <h3>Neon Nights</h3>
+                            <p class="featured-meta">Cyberpunk · 1h 57m</p>
+                            <div class="featured-tags">
+                                <span class="featured-tag">Trending</span>
+                                <span class="featured-tag">HDR</span>
+                            </div>
+                        </div>
+                        <div class="featured-score">
+                            <span>9.4</span>
+                            <small>/10</small>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="featured-row">
+                        <div class="featured-thumb">
+                            <img src="https://images.pexels.com/photos/1117132/pexels-photo-1117132.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Shadow District">
+                        </div>
+                        <div class="featured-body">
+                            <h3>Shadow District</h3>
+                            <p class="featured-meta">Thriller · 2h 05m</p>
+                            <div class="featured-tags">
+                                <span class="featured-tag">Premiere</span>
+                                <span class="featured-tag">HD</span>
+                            </div>
+                        </div>
+                        <div class="featured-score">
+                            <span>8.9</span>
+                            <small>/10</small>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="featured-row">
+                        <div class="featured-thumb">
+                            <img src="https://images.pexels.com/photos/1630771/pexels-photo-1630771.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Solar Drift">
+                        </div>
+                        <div class="featured-body">
+                            <h3>Solar Drift</h3>
+                            <p class="featured-meta">Sci-Fi · 2h 20m</p>
+                            <div class="featured-tags">
+                                <span class="featured-tag">Top Pick</span>
+                                <span class="featured-tag">4K</span>
+                            </div>
+                        </div>
+                        <div class="featured-score">
+                            <span>9.1</span>
+                            <small>/10</small>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="featured-row">
+                        <div class="featured-thumb">
+                            <img src="https://images.pexels.com/photos/3194205/pexels-photo-3194205.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Midnight Run">
+                        </div>
+                        <div class="featured-body">
+                            <h3>Midnight Run</h3>
+                            <p class="featured-meta">Action · 1h 48m</p>
+                            <div class="featured-tags">
+                                <span class="featured-tag">Editor's Pick</span>
+                                <span class="featured-tag">New</span>
+                            </div>
+                        </div>
+                        <div class="featured-score">
+                            <span>8.7</span>
+                            <small>/10</small>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="featured-row">
+                        <div class="featured-thumb">
+                            <img src="https://media.istockphoto.com/id/479711207/photo/magellanic-cloud.jpg?s=612x612&w=0&k=20&c=g044tx9D-FPhbX6mkXtIqYepvwUzv4KWIPJe3sxDZnU=" alt="Echoes of the Void">
+                        </div>
+                        <div class="featured-body">
+                            <h3>Echoes of the Void</h3>
+                            <p class="featured-meta">Mystery · 2h 34m</p>
+                            <div class="featured-tags">
+                                <span class="featured-tag">Top Rated</span>
+                                <span class="featured-tag">Sci-Fi</span>
+                            </div>
+                        </div>
+                        <div class="featured-score">
+                            <span>9.4</span>
+                            <small>/10</small>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="featured-card">
+                    <div class="featured-row">
+                        <div class="featured-thumb">
+                            <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Glass Serpent">
+                        </div>
+                        <div class="featured-body">
+                            <h3>Glass Serpent</h3>
+                            <p class="featured-meta">Action · 2h 11m</p>
+                            <div class="featured-tags">
+                                <span class="featured-tag">Popular</span>
+                                <span class="featured-tag">Must Watch</span>
+                            </div>
+                        </div>
+                        <div class="featured-score">
+                            <span>8.5</span>
+                            <small>/10</small>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 MovieHub. All rights reserved.</p>
+    </footer>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-brand-header">
+                        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M7 9h10M7 15h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span class="brand-name">CINEVERSE</span>
+                    </div>
+                    <p>Your premium destination for cinematic experiences. Stream thousands of movies and shows.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 9-7 9-7"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                <circle cx="17.5" cy="6.5" r="1.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a6 6 0 00-6 6v9h-2v4h2v2h4v-2h3v-4h-3V8a1 1 0 011-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.54c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="black"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div>
+                        <h4>Company</h4>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Careers</li>
+                            <li>Press</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>Support</h4>
+                        <ul>
+                            <li>Help Center</li>
+                            <li>Contact Us</li>
+                            <li>Privacy Policy</li>
+                            <li>Terms of Use</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>Content</h4>
+                        <ul>
+                            <li>Movies</li>
+                            <li>TV Shows</li>
+                            <li>Originals</li>
+                            <li>New Releases</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>Legal</h4>
+                        <ul>
+                            <li>Cookie Policy</li>
+                            <li>Accessibility</li>
+                            <li>Investor Relations</li>
+                            <li>Sitemap</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-subscribe">
+                <div class="subscribe-left">
+                    <h4>Stay in the loop</h4>
+                    <p>Get the latest releases and exclusive content delivered to your inbox.</p>
+                </div>
+                <form class="subscribe-form" action="#">
+                    <input type="email" placeholder="your@email.com">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2024 CineVerse. All rights reserved.</span>
+                <span class="footer-credit">Made with ❤️ for cinema lovers worldwide</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
