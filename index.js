@@ -78,7 +78,10 @@ class Carousel {
 
 // Initialize carousel when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-    new Carousel();
+    // Only initialize carousel on pages that have carousel slides
+    if (document.querySelectorAll('.carousel-slide').length > 0) {
+        new Carousel();
+    }
 });
 
 // ============================================
@@ -97,9 +100,24 @@ hamburger.addEventListener('click', function() {
 // Close menu when a link is clicked
 const navLinks = document.querySelectorAll('.nav-link');
 navLinks.forEach(link => {
-    link.addEventListener('click', function() {
+    link.addEventListener('click', function(e) {
         hamburger.classList.remove('active');
         navMenu.classList.remove('active');
+
+        // set active class on clicked nav link
+        navLinks.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+
+        // smooth-scroll to section (preserve anchor behavior)
+        const href = this.getAttribute('href');
+        if (href && href.startsWith('#')) {
+            const target = document.querySelector(href);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                history.replaceState(null, '', href);
+            }
+        }
     });
 });
 

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineVerse - Notifications</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <span class="logo-icon">🎬</span>
+                <span class="logo-text">CINE<span class="logo-accent">VERSE</span></span>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="movie.html" class="nav-link">Movies</a></li>
+                <li><a href="tv.html" class="nav-link">TV Shows</a></li>
+                <li><a href="trending.html" class="nav-link">Trending</a></li>
+                <li><a href="mylist.html" class="nav-link">My List</a></li>
+            </ul>
+
+            <!-- Right Side Icons -->
+            <div class="nav-icons">
+                <a href="search.html" class="icon-link search-icon">🔍</a>
+                <a href="notifications.html" class="icon-link">🔔</a>
+                <a href="profile.html" class="icon-link profile">
+                    <span class="profile-avatar">A</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Notifications Section -->
+    <section class="notifications-section" id="notifications">
+        <div class="section-inner">
+            <div class="notifications-header">
+                <h1>Notifications</h1>
+                <button class="mark-all-btn">Mark all as read</button>
+            </div>
+
+            <div class="notifications-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="releases">New Releases</button>
+                <button class="filter-btn" data-filter="watchlist">Watchlist</button>
+                <button class="filter-btn" data-filter="announcements">Announcements</button>
+            </div>
+
+            <div class="notifications-list">
+                <!-- Notification Item - Unread -->
+                <div class="notification-item unread">
+                    <div class="notification-avatar">📺</div>
+                    <div class="notification-content">
+                        <h3 class="notification-title">New Episode Available</h3>
+                        <p class="notification-message">Season 3, Episode 5 of "Neon Nights" is now available to watch</p>
+                        <span class="notification-time">5 minutes ago</span>
+                    </div>
+                    <button class="notification-action">Watch Now</button>
+                </div>
+
+                <!-- Notification Item - Unread -->
+                <div class="notification-item unread">
+                    <div class="notification-avatar">🎬</div>
+                    <div class="notification-content">
+                        <h3 class="notification-title">Movie Added to Your List</h3>
+                        <p class="notification-message">"Echoes of the Void" has been added to your watchlist by recommendation</p>
+                        <span class="notification-time">2 hours ago</span>
+                    </div>
+                    <button class="notification-action">View</button>
+                </div>
+
+                <!-- Notification Item - Unread -->
+                <div class="notification-item unread">
+                    <div class="notification-avatar">🌟</div>
+                    <div class="notification-content">
+                        <h3 class="notification-title">Your Recommendation: Crimson Protocol</h3>
+                        <p class="notification-message">Based on your viewing history, we think you'll love this thriller</p>
+                        <span class="notification-time">4 hours ago</span>
+                    </div>
+                    <button class="notification-action">Explore</button>
+                </div>
+
+                <!-- Notification Item - Read -->
+                <div class="notification-item read">
+                    <div class="notification-avatar">🎉</div>
+                    <div class="notification-content">
+                        <h3 class="notification-title">Premium Membership Renewed</h3>
+                        <p class="notification-message">Your annual Premium subscription has been renewed successfully</p>
+                        <span class="notification-time">1 day ago</span>
+                    </div>
+                    <button class="notification-action">Details</button>
+                </div>
+
+                <!-- Notification Item - Read -->
+                <div class="notification-item read">
+                    <div class="notification-avatar">🎯</div>
+                    <div class="notification-content">
+                        <h3 class="notification-title">New Content Coming Soon</h3>
+                        <p class="notification-message">3 new exclusive originals premiering next week</p>
+                        <span class="notification-time">2 days ago</span>
+                    </div>
+                    <button class="notification-action">View Trailer</button>
+                </div>
+
+                <!-- Notification Item - Read -->
+                <div class="notification-item read">
+                    <div class="notification-avatar">⭐</div>
+                    <div class="notification-content">
+                        <h3 class="notification-title">Your Rating was Helpful</h3>
+                        <p class="notification-message">53 people found your review of "Shattered Prism" helpful</p>
+                        <span class="notification-time">3 days ago</span>
+                    </div>
+                    <button class="notification-action">View</button>
+                </div>
+
+                <!-- Notification Item - Read -->
+                <div class="notification-item read">
+                    <div class="notification-avatar">📢</div>
+                    <div class="notification-content">
+                        <h3 class="notification-title">Maintenance Notice</h3>
+                        <p class="notification-message">Scheduled maintenance on June 10 from 2-4 AM UTC</p>
+                        <span class="notification-time">4 days ago</span>
+                    </div>
+                    <button class="notification-action">Dismiss</button>
+                </div>
+
+                <!-- Notification Item - Read -->
+                <div class="notification-item read">
+                    <div class="notification-avatar">🎊</div>
+                    <div class="notification-content">
+                        <h3 class="notification-title">You've Watched 100 Hours!</h3>
+                        <p class="notification-message">Congratulations! You've watched over 100 hours on CineVerse</p>
+                        <span class="notification-time">1 week ago</span>
+                    </div>
+                    <button class="notification-action">View Stats</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-brand-header">
+                        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                            <path d="M7 9h10M7 15h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span class="brand-name">CINEVERSE</span>
+                    </div>
+                    <p>Your premium destination for cinematic experiences. Stream thousands of movies and shows.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 9-7 9-7"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                <circle cx="17.5" cy="6.5" r="1.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a6 6 0 00-6 6v9h-2v4h2v2h4v-2h3v-4h-3V8a1 1 0 011-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.54c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="black"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div>
+                        <h4>Company</h4>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Careers</li>
+                            <li>Press</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>Support</h4>
+                        <ul>
+                            <li>Help Center</li>
+                            <li>Contact Us</li>
+                            <li>Privacy Policy</li>
+                            <li>Terms of Use</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>Content</h4>
+                        <ul>
+                            <li>Movies</li>
+                            <li>TV Shows</li>
+                            <li>Originals</li>
+                            <li>New Releases</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>Legal</h4>
+                        <ul>
+                            <li>Cookie Policy</li>
+                            <li>Accessibility</li>
+                            <li>Investor Relations</li>
+                            <li>Sitemap</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-subscribe">
+                <div class="subscribe-left">
+                    <h4>Stay in the loop</h4>
+                    <p>Get the latest releases and exclusive content delivered to your inbox.</p>
+                </div>
+                <form class="subscribe-form" action="#">
+                    <input type="email" placeholder="your@email.com">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2024 CineVerse. All rights reserved.</span>
+                <span class="footer-credit">Made with ❤️ for cinema lovers worldwide</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
